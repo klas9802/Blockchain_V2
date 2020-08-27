@@ -1,0 +1,51 @@
+﻿<head>
+    <link rel="stylesheet" href="~/css/login.css">
+</head>
+
+<div class="container-fluid">
+    <div class="row no-gutter">
+        <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+        <div class="col-md-8 col-lg-6">
+            <div class="login d-flex align-items-center py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-8 mx-auto">
+                            <h3 class="login-heading mb-4">在此註冊</h3>
+                            <form action="/Registered/AddUser" method="post">
+                                <div class="form-label-group">
+                                    <input type="text" id="Name" class="form-control" name="name" required>
+                                    <label for="inputEmail">姓名</label>
+                                </div>
+
+
+                                <div class="form-label-group">
+                                    <input type="text" id="Account" class="form-control" name="account"  required>
+                                    <label for="inputPassword">帳號</label>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="password" id="Password" class="form-control" name="password" required>
+                                    <label for="inputPassword">密碼</label>
+                                </div>
+
+                                <div class="form-label-group">
+                                    <input type="password" id="Password" class="form-control" name="passwordchick" required>
+                                    <label for="inputPassword">確認密碼</label>
+                                </div>
+
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1" >
+                                    <label class="custom-control-label" for="customCheck1">同意本網站相關規定</label>
+                                </div>
+                                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit" name="button" id="button">註冊</button>
+                                <div class="text-center">
+                                    <a class="small" href="/Login">返回登入</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

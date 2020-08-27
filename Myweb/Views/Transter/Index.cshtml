@@ -1,0 +1,136 @@
+﻿<header>
+    <script>
+        //管理者能上架商品 使用者看不到上架的按鈕
+        //必須先取得Token和Address 才能 進行更換武器庫和購買武器
+        //假設點此按鈕(name=connect)，遊戲連接成功顯示當前遊戲資訊，否則為連線失敗
+        //<button type="button" class="btn btn-primary" onclick="connent()" name="connect" style="font-family:'Microsoft JhengHei'">遊戲連接</button>
+
+    </script>
+    
+</header>
+
+
+<div class="container">
+    <img src="http://placehold.it/1920x1080" class="img-fluid" alt="Responsive image">
+    <div class="row">
+        <div class="col-md-3">
+            <h2>開盤價:31</h2>
+        </div>
+        <div class="col-md-3">
+            <h2>收盤價:35</h2>
+        </div>
+        <div class="col-md-3">
+            <h2>最高價:35</h2>
+        </div>
+        <div class="col-md-3">
+            <h2>最低價:31</h2>
+        </div>
+    </div>
+</div>
+<div class="null">
+
+</div>
+
+<div class="container">
+    <button type="button" class="btn btn-primary" onclick="connent()" name="connect" style="font-family:'Microsoft JhengHei'">遊戲連接</button>
+    <button type="button" class="btn btn-primary">取得Token & Address</button>
+    <button type="button" class="btn btn-primary">儲值延幣</button>
+
+
+</div>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">角色名稱</th>
+                <th scope="col">戰力指數</th>
+                <th scope="col">當前武器</th>
+                <th scope="col">目前擁有的延幣</th>
+                <th scope="col">TokenValue</th>
+                <th scope="col">Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mark</td>
+                <td>9999</td>
+                <td>頂級射手雙門大砲</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="container">
+    <h2>武器庫</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://miro.medium.com/max/3200/1*SKXkSAVhRFSNOUIxVMD91Q.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">幻象2000</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">更換</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://i.ytimg.com/vi/3yEaMJAcjUY/maxresdefault.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">東風16</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">更換</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/J-20_at_Airshow_China_2016.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">懺-11</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">更換</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.hk01.com/di/media/images/314172/org/a0389d038355eb9214e43445edcfb572.jpg/2MjPNsjlQNEDliJx9yaXwGMGneIyUP7oB_RqwQf0asE?v=w1920" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">F22</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">更換</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="null"></div>
+
+
+<div class="container">
+    <h2>延幣賣場</h2>
+    <button type="button" class="btn btn-primary">上架商品</button> 
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/A_U.S._Air_Force_pilot_navigates_an_F-35A_Lightning_II_aircraft_assigned_to_the_58th_Fighter_Squadron%2C_33rd_Fighter_Wing_into_position_to_refuel_with_a_KC-135_Stratotanker_assigned_to_the_336th_Air_Refueling_130516-F-XL333-496.jpg/1200px-thumbnail.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">F35</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">購買</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

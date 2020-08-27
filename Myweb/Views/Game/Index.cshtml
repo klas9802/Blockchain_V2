@@ -1,0 +1,38 @@
+﻿<h1>Hello Game</h1>
+
+
+<script>
+    $(document).ready(function () {
+        $("button[name=delete]").click(function (e) {
+            var re = e.target.id.replace("btn_", "");
+            $.post("/Game/Delete", { id: re }, function (e1) {
+                if (e1 == "ok") {
+                    location.reload();
+                }
+                else {
+                    alert("lose");
+                }
+            });
+        });
+    });
+</script>
+
+
+
+
+
+
+
+<a class="btn btn-primary" href="/Game/Add">新增</a>
+<table class="table">
+    @foreach (var game in ViewBag.games)
+    {
+    <tr>
+        <td>@game.Id</td>
+        <td>@game.Name</td>
+        <td>@game.Description</td>
+        <td><button type="button" class="btn btn-danger" id="btn_@game.Id" name="delete">刪除</button></td>
+        <td><a class="btn btn-info" href="/Game/GameEdit/@game.Id">編輯</a></td>
+    </tr>
+    }
+</table>
